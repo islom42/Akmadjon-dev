@@ -1,0 +1,35 @@
+.footer__bottom {
+  height: 120px;
+  padding: 45px 0;
+  background: linear-gradient(
+    180deg,
+    #058aff 0%,
+    rgba(57, 55, 206, 0.87) 97.91%
+  );
+  p {
+    color: #fff;
+  }
+  .info-social ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      margin-right: 30px;
+    }
+  }
+  .footer__info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .btn-footer {
+    height: 52px;
+    width: 161px;
+    border-radius: 6px;
+    background-color: #fff;
+    color: rgb(0, 0, 0);
+    border: none;
+  }
+}
