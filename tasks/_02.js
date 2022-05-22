@@ -196,3 +196,36 @@ const countFalsy = (array) => {
 
 //==========================================
 //==========================================
+
+//! calc Grade Function
+
+let mark = [80, 39, 90];
+let sumOfMarks = 0;
+
+let getAverage = (mark) => {
+  mark.map((value) => (sumOfMarks += value));
+  return Math.round(sumOfMarks / mark.length);
+};
+
+const getScore = (score) => {
+  console.log(`Average score is ${score}`);
+  if (score <= 59) return "F";
+  if (score <= 69) return "D";
+  if (score <= 79) return "C";
+  if (score <= 89) return "B";
+  return "A";
+};
+// console.log(getScore(getAverage(mark)));
+
+//==========================================
+//==========================================
+
+//! Show stars
+
+const showStars = (sym, num1) => {
+  for (let i = 1; i <= num1; i++) {
+    console.log(sym.repeat(i));
+  }
+};
+// showStars("*", 10);
+// showStars("#", 10);
