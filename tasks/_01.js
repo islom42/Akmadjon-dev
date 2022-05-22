@@ -31,12 +31,24 @@ const findSignOfNumber = function (num1, num2, num3) {
 // console.log(findSignOfNumber(5, 6, 7)); // +
 // console.log(findSignOfNumber(-5, -6, -7)); // -
 // console.log(findSignOfNumber(5, -6, -7)); // -
-// console.log(findSignOfNumber(-5, 6, -7)); // +
+// console.log(findSignOfNumber(-5, 6, -7)); // -
 
 //===============================================
 //===============================================
 
-/* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to
+/* 3. Wrelse if (num1 > 0 && num2 < 0 && num3 < 0) {
+    return `The sign is => -`;
+  } else if (num1 < 0 && num2 > 0 && num3 < 0) {
+    return `The sign is => -`;else if (num1 > 0 && num2 < 0 && num3 < 0) {
+    return `The sign is => -`;
+  } else if (num1 < 0 && num2 > 0 && num3 < 0) {
+    return `The sign is => -`;else if (num1 > 0 && num2 < 0 && num3 < 0) {
+    return `The sign is => -`;
+  } else if (num1 < 0 && num2 > 0 && num3 < 0) {
+    return `The sign is => -`;else if (num1 > 0 && num2 < 0 && num3 < 0) {
+    return `The sign is => -`;
+  } else if (num1 < 0 && num2 > 0 && num3 < 0) {
+    return `The sign is => -`;ite a JavaScript conditional statement to sort three numbers. Display an alert box to
 show the result. */
 let num1 = 1;
 let num2 = 30;
