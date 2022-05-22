@@ -6,10 +6,9 @@
   list-style-type: none;
 }
 
-
 // Psevdoelementdagi uchburchak
 
-@mixin triangle ($direction, $size: 15px, $color: black) {
+@mixin triangle($direction, $size: 15px, $color: black) {
   display: inline-block;
   width: 0;
   height: 0;
@@ -34,23 +33,34 @@
   }
 }
 
-
 // Media so'rovlar uchun mixin
 
-@mixin breakpoint-down ($screen-width) {
+@mixin breakpoint-down($screen-width) {
   @media only screen and (max-width: $screen-width) {
     @content;
   }
 }
 
-@mixin breakpoint-up ($screen-width) {
+@mixin breakpoint-up($screen-width) {
   @media only screen and (min-width: $screen-width) {
     @content;
   }
 }
 
-@mixin breakpoint-between ($min-screen, $max-screen) {
+@mixin breakpoint-between($min-screen, $max-screen) {
   @media only screen and (min-width: $min-screen) and (max-width: $max-screen) {
     @content;
   }
+}
+
+@mixin flex-default {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@mixin btn-reset {
+  border-radius: 6px;
+  background-color: $primary-color;
+  color: #fff;
+  border: none;
 }

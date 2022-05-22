@@ -1,0 +1,65 @@
+/* Hero section */
+#hero {
+  margin-top: 100px;
+}
+.hero-wrapper {
+  @include flex-default;
+}
+.hero__content {
+  &--left {
+    width: 531px;
+    height: 341px;
+  }
+  &--right img {
+    width: 500px;
+    height: 500px;
+  }
+  &-title {
+    margin: 0;
+    color: $primary-color;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+  }
+  &-subtitle {
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-family: "Roboto";
+    font-weight: 700;
+    font-size: 60.55px;
+    line-height: 130%;
+    span {
+      color: $primary-color;
+    }
+  }
+  &-description {
+    margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 0.6;
+  }
+  &-buttons {
+    display: flex;
+    align-items: center;
+  }
+  .btn-hero {
+    @include btn-reset;
+    padding: 20px 45px;
+    cursor: pointer;
+  }
+  .btn-video {
+    margin-left: 30px;
+    display: flex;
+    border: 1px solid $primary-color;
+    background-color: $text-white;
+    cursor: pointer;
+    color: black;
+    img {
+      display: block;
+      margin-right: 10px;
+    }
+  }
+}
